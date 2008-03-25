@@ -1,0 +1,147 @@
+Documentation for XSL stylesheet "dinbrief-fo"
+
+
+
+The purpose of this stylesheet is to format letters
+according to DIN 676:1995-05 ("Geschäftsbrief -
+Einzelvordrucke und Endlosvordrucke"). As the target
+audience of this stylesheet is primarily German, the
+remainder of this documentation uses its wonderful
+language. If you have any question, please do not hesitate
+to contact me.
+
+  BTW, the use of the English language for the names of
+elements and attributes is no accident - ideally, the letter
+"source" is universal (and therefore using its lingua
+franca) and can be formatted with several country-specific
+stylesheets according to individual needs. Well, at least in
+my ideal universe.
+
+	                 Tim Landscheidt
+                         <tim@tim-landscheidt.de>
+
+
+
+1. Einführung
+
+Dieses Stylesheet dient dazu, Briefe, die in einer
+XML-Anwendung geschrieben wurden, entsprechend DIN
+676:1995-05 zu setzen. Ebenso werden die
+Adressierungsvorschriften der Deutschen Post World Net AG
+berücksichtigt.
+
+  Die (einfache) Erstellung von Serienbriefen ist ebenfalls
+möglich.
+
+
+
+2. Lizenz
+
+Dieses Stylesheet erreicht nicht die geistige
+Schöpfungshöhe, um Urheberschutz zu genießen. Für den Fall,
+dass jemand andere Ansichten vertritt, räume ich jedem
+möglichen Anwender ein zeitlich unbeschränktes Nutzungsrecht
+an diesem Stylesheet ein bzw. entlasse es, wo dies rechtlich
+möglich ist, als "public domain".
+
+  In jedem Fall hafte ich nicht für Schäden, die aus der
+Verwendung dieses Stylesheets entstehen.
+
+  Ich freue mich jedoch über jede Rückmeldung über Fehler
+und Verbesserungsvorschläge.
+
+
+
+3. Verwendete Elemente
+
+3.1. letters
+
+Das Wurzelelement. Alle Briefe, die in ihm enthalten sind,
+werden in eine PDF-Datei formatiert.
+
+3.2. letter
+
+Ein (Serien-) Brief. Es enthält Datum, Absender, Empfänger,
+Betreff, Anrede, Fließtext und Schlussformel.
+
+3.3. date
+
+Das Datum in der Form, wie es gedruckt werden soll
+(beispielsweise "24. März 2008").
+
+3.4. sender
+
+Der Absender. Momentan werden nur die Elemente name und
+returnline verwendet.
+
+3.5. name
+
+Der Name des Absenders oder des Empfängers.
+
+3.6. returnline
+
+Die Rücksendeanschrift, die über die Adresse in dem
+Brieffenster ausgegeben werden soll.
+
+3.7. recipients
+
+Die Empfänger. Für jeden einzelnen Empfänger wird ein neuer
+Brief formatiert.
+
+3.8. recipient
+
+Ein einzelner Empfänger, bestehend aus Name, Zusatzzeile
+(optional), Straße (optional), Postleitzahl, Stadt und
+Staat.
+
+3.9. additionalline
+
+Eine Zusatzzeile zu der freien Verwendung (beispielsweise
+"2. Stock").
+
+3.10. street
+
+Die Straße und Hausnummer.
+
+3.11. postcode
+
+Die Postleitzahl.
+
+3.12. city
+
+Die Stadt.
+
+3.13. country
+
+Der Staat als ISO-3166-Abkürzung (beispielsweise "NL" für
+"Königreich der Niederlande"). Ist country "DE", wird es bei
+der Ausgabe weggelassen.
+
+3.14. subject
+
+Der Betreff.
+
+3.15. salutation
+
+Die Anrede mit abschließendem Komma (oder Ausrufezeichen).
+
+3.16. text
+
+Der Fließtext.
+
+3.17. para
+
+Ein einzelner Absatz.
+
+3.18. closing
+
+Die Schlussformel. Darunter wird der Name des Absenders
+ausgegeben.
+
+3.19. ul
+
+Eine unnumerierte Liste.
+
+3.20. li
+
+Ein einzelnes Listenelement.
