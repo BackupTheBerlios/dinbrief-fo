@@ -1,0 +1,25 @@
+<!ELEMENT letters        (letter)+>
+<!ELEMENT letter         (date, sender, recipients, subject, salutation, text, closing)>
+<!ELEMENT date           (#PCDATA)>
+<!ELEMENT sender         (name, voice*, fax*, email*, www?, returnline)>
+<!ELEMENT name           (#PCDATA)>
+<!ELEMENT fao            (#PCDATA)>
+<!ELEMENT street         (#PCDATA)>
+<!ELEMENT postcode       (#PCDATA)>
+<!ELEMENT city           (#PCDATA)>
+<!ELEMENT country        (#PCDATA)>
+<!ELEMENT voice          (#PCDATA)>
+<!ELEMENT fax            (#PCDATA)>
+<!ELEMENT email          (#PCDATA)>
+<!ELEMENT www            (#PCDATA)>
+<!ELEMENT returnline     (#PCDATA)>
+<!ELEMENT recipients     (recipient*)>
+<!ELEMENT recipient      (name, fao?, additionalline?, street?, postcode, city, country)>
+<!ELEMENT additionalline (#PCDATA)>
+<!ELEMENT subject        (#PCDATA)>
+<!ELEMENT salutation     (#PCDATA)>
+<!ELEMENT text           (para|ul)*>
+<!ELEMENT para           (#PCDATA)>
+<!ELEMENT closing        (#PCDATA)>
+<!ELEMENT ul             (li+)>
+<!ELEMENT li             (#PCDATA)>
