@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<letters>
+  <letter>
+    <date>12. Februar 2010</date>
+
+    <sender>
+      <name>Tim Landscheidt</name>
+
+      <voice>+49 40 60816408</voice>
+      <voice>+49 179 2258485</voice>
+      <fax>+49 179 33-2258485</fax>
+      <email>tim@tim-landscheidt.de</email>
+      <www>www.tim-landscheidt.de</www>
+
+      <returnline>Tim Landscheidt &#183;
+                  Washingtonallee 44 &#183;
+                  DE-22111 Hamburg</returnline>
+    </sender>
+
+    <recipients>
+      <recipient>
+        <name>Tim Landscheidt</name>
+        <street>Washingtonallee 44</street>
+        <postcode>22111</postcode>
+        <city>Hamburg</city>
+        <country>DE</country>
+      </recipient>
+    </recipients>
+
+    <subject>Einfacher Test</subject>
+
+    <salutation>Sehr geehrter Herr Landscheidt,</salutation>
+
+    <text>
+      <para>dies ist ein einfacher Test, um die Fähigkeiten
+            von dinbrief-fo zu überprüfen.</para>
+
+      <para>Der zweite Absatz sollte aus diesem Satz
+            bestehen.</para>
+
+    </text>
+
+    <closing>Mit freundlichen Grüßen,</closing>
+  </letter>
+</letters>
